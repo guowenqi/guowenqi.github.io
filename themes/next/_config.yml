@@ -2,27 +2,44 @@
 # Site Information Settings
 # ---------------------------------------------------------------
 
+######################
+#	网站图标
+######################
 # Put your favicon.ico into `hexo-site/source/` directory.
 favicon: /favicon.ico
 
+######################
+#	默认关键字
+######################
 # Set default keywords (Use a comma to separate)
 keywords: "Hexo, NexT"
 
+######################
+#	RSS订阅
+######################
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
 rss:
 
+######################
+#	建站日期
+######################
 # Specify the date when the site was setup
 since: 2016
 
 
 
-
+######################
+#	菜单设置
+######################
 # ---------------------------------------------------------------
 # Menu Settings
 # ---------------------------------------------------------------
 
+######################
+#	菜单
+######################
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
@@ -33,6 +50,9 @@ menu:
   #commonweal: /404.html
 
 
+######################
+#	菜单图标
+######################
 # Enable/Disable menu icons.
 # Icon Mapping:
 #   Map a menu item to a specific FontAwesome icon name.
@@ -51,6 +71,9 @@ menu_icons:
 
 
 
+######################
+#	主题样式
+######################
 # ---------------------------------------------------------------
 # Scheme Settings
 # ---------------------------------------------------------------
@@ -60,7 +83,9 @@ menu_icons:
 #scheme: Mist
 scheme: Pisces
 
-
+######################
+#	字体设置
+######################
 # ---------------------------------------------------------------
 # Font Settings
 # - Find fonts on Google Fonts (https://www.google.com/fonts)
@@ -109,11 +134,16 @@ font:
 
 
 
+######################
+#	侧栏设置
+######################
 # ---------------------------------------------------------------
 # Sidebar Settings
 # ---------------------------------------------------------------
 
-
+######################
+#	社交链接
+######################
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
@@ -122,6 +152,9 @@ social:
   GitHub: https://github.com/guowenqi
 
 
+######################
+#	社交链接图标
+######################
 # Social Links Icons
 # Icon Mapping:
 #   Map a menu item to a specific FontAwesome icon name.
@@ -136,12 +169,17 @@ social_icons:
   Weibo: weibo
 
 
+######################
+#	头像
+######################
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
 #avatar:
 
-
+######################
+#	目录栏
+######################
 # Table Of Contents in the Sidebar
 toc:
   enable: true
@@ -150,13 +188,18 @@ toc:
   number: true
 
 
+######################
+#	国际许可证
+######################
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
 #creative_commons: by-nc-sa
 #creative_commons:
 
-
+######################
+#	文章目录
+######################
 sidebar:
   # Sidebar Position, available value: left | right
   position: left
@@ -173,6 +216,9 @@ sidebar:
   #display: remove
 
 
+######################
+#	友情链接
+######################
 # Blogrolls
 links_title: Links
 #links_layout: block
@@ -182,10 +228,16 @@ links:
   熊远文: http://vinnyxiong.cn/
 
 
+######################
+#	Misc主题设置
+######################
 # ---------------------------------------------------------------
 # Misc Theme Settings
 # ---------------------------------------------------------------
 
+######################
+#	自定义图标
+######################
 # Custom Logo.
 # !!Only available for Default Scheme currently.
 # Options:
@@ -196,17 +248,24 @@ custom_logo:
   image:
 
 
+######################
+#	代码高亮主题
+######################
 # Code Highlight theme
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
 highlight_theme: night bright
 
-
+#######################################
+#	阅读全文时页面自动滚动到文章截取处
+#######################################
 # Automatically scroll page to section which is under <!-- more --> mark.
 scroll_to_more: true
 
-
+####################################
+#	自动摘录，每篇文章只显示一部分
+####################################
 # Automatically Excerpt. Not recommand.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
@@ -214,6 +273,9 @@ auto_excerpt:
   length: 150
 
 
+######################
+#	微信订阅
+######################
 # Wechat Subscriber
 #wechat_subscriber:
   #enabled: true
@@ -223,56 +285,96 @@ auto_excerpt:
 
 
 
+######################
+#	第三方服务设置
+######################
 # ---------------------------------------------------------------
 # Third Party Services Settings
 # ---------------------------------------------------------------
 
+######################
+#	显示数学公式
+######################
 # MathJax Support
 mathjax:
   enable: false
   cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 
+######################
+#	Swiftype搜索
+######################
 # Swiftype Search API Key
 #swiftype_key:
 
+######################
+#	百度分析
+######################
 # Baidu Analytics ID
 #baidu_analytics:
 
+######################
+#	多说评论域名
+######################
 # Duoshuo ShortName
 duoshuo_shortname: guowenqi
 
+######################
+#	Disqus评论
+######################
 # Disqus
 #disqus_shortname:
 
+######################
+#	百度分享
+######################
 # Baidu Share
 # Available value:
 #    button | slide
 #baidushare:
 ##  type: button
 
+######################
+#	jiathis评论
+######################
 # Share
 #jiathis:
 #add_this_id:
 
+######################
+#	多说分享
+######################
 # Share
 duoshuo_share: true
 
-# 多说热评文章
+######################
+#	多说热评文章
+######################
 duoshuo_hotartical: true
 
+######################
+#	谷歌网站管理
+######################
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
 #google_site_verification:
 
 
+######################
+#	Google分析
+######################
 # Google Analytics
 #google_analytics:
 
+######################
+#	CNZZ统计
+######################
 # CNZZ count
 #cnzz_siteid:
 
-
+######################
+#	多说评论显示UA
+######################
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
@@ -283,6 +385,9 @@ duoshuo_info:
   admin_nickname: 博主
 
 
+######################
+#	Facebook
+######################
 # Facebook SDK Support.
 # https://github.com/iissnan/hexo-theme-next/pull/410
 facebook_sdk:
@@ -293,6 +398,9 @@ facebook_sdk:
   webmaster:    #true
 
 
+##############################
+#	LeanCloud 文章阅读数统计
+##############################
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
@@ -300,6 +408,9 @@ leancloud_visitors:
   app_id: 8PNlV1YJ5b2igiAiw86erPYa-gzGzoHsz
   app_key: 5A0yav5m0wpz4e5sx9Pm413P
 
+#####################################################
+#	不蒜子统计：站点访问量，页面访问量，单页面访问量
+#####################################################
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
@@ -318,9 +429,15 @@ busuanzi_count:
   page_pv_header: <i class="fa fa-file-o"></i>
   page_pv_footer:
 
+######################
+#	腾讯分析
+######################
 # Tencent analytics ID
 # tencent_analytics:
 
+######################
+#	百度推广
+######################
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
 baidu_push: false
 
@@ -337,7 +454,9 @@ use_motion: true
 # Fancybox
 fancybox: true
 
-
+######################
+#	脚本供应商
+######################
 # Script Vendors.
 # Set a CDN address for the vendor you want to customize.
 # For example
@@ -385,13 +504,20 @@ css: css
 js: js
 images: images
 
+######################
+#	主题版本
+######################
 # Theme version
 version: 5.0.1
 
-# Donate 打赏功能
+######################
+#	打赏功能
+######################
 reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
 wechatpay: /wechatpay.png
 
-#站点地图
+######################
+#	站点地图
+######################
 sitemap:
     path: sitemap.xml
