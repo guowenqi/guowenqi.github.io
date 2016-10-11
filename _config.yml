@@ -15,7 +15,8 @@ timezone:
 #######################
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: guowenqi.github.io
+url: http://guowenqi.github.io
+coding_url: http://mway.top
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -93,8 +94,9 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:guowenqi/guowenqi.github.io.git
-  branch: master
+  repo: 
+     github: git@github.com:guowenqi/guowenqi.github.io.git,master
+     coding: git@git.coding.net:guowenqi/guowenqi.git,master
 
 #######################
 #	头像
@@ -112,4 +114,4 @@ search:
 #######################
 #	百度统计
 ####################### 
-baidu_analytics: 9a7698647c5178775b8fc673a0ba84d2
+baidu_analytics: 816d618251c510b2cadd76e4dafc7cfb

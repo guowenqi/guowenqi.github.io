@@ -405,8 +405,8 @@ facebook_sdk:
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
   enable: true
-  app_id: 8PNlV1YJ5b2igiAiw86erPYa-gzGzoHsz
-  app_key: 5A0yav5m0wpz4e5sx9Pm413P
+  app_id: vJCFtOMSW5fw5pSU3nshi839-gzGzoHsz
+  app_key: rEPH694BG19GCBxSjBM4NVa2
 
 #####################################################
 #	不蒜子统计：站点访问量，页面访问量，单页面访问量
@@ -521,3 +521,6 @@ wechatpay: /wechatpay.png
 ######################
 sitemap:
     path: sitemap.xml
+baidusitemap:
+    path: baidusitemap.xml
+
