@@ -48,6 +48,7 @@ menu:
   archives: /archives
   tags: /tags
   #commonweal: /404.html
+  photos: /photos
 
 
 ######################
@@ -67,6 +68,7 @@ menu_icons:
   tags: tags
   archives: archive
   commonweal: heartbeat
+  photos: photo
 
 
 
@@ -150,7 +152,8 @@ font:
 social:
   #LinkLabel: Link
   GitHub: https://github.com/guowenqi
-
+  Weibo: http://t.qq.com/guowenqi6631
+  知乎: https://www.zhihu.com/people/guo-wen-qi-97
 
 ######################
 #	社交链接图标
@@ -166,8 +169,8 @@ social_icons:
   # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
   Twitter: twitter
-  Weibo: weibo
-
+  Weibo: tencent-weibo
+  知乎: graduation-cap
 
 ######################
 #	头像
@@ -194,7 +197,7 @@ toc:
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
-#creative_commons: by-nc-sa
+creative_commons: by-nc-sa
 #creative_commons:
 
 ######################
@@ -226,6 +229,8 @@ links_title: Links
 links:
   #Title: http://example.com/
   熊远文: http://vinnyxiong.cn/
+  JORY'S BLOG: http://www.joryhe.com/
+  ziv小站: http://www.yanglonglong.com/
 
 
 ######################
@@ -350,7 +355,9 @@ duoshuo_share: true
 ######################
 #	多说热评文章
 ######################
-duoshuo_hotartical: true
+duoshuo_hotartical: false
+
+
 
 ######################
 #	谷歌网站管理
@@ -451,6 +458,9 @@ baidu_push: false
 # Motion
 use_motion: true
 
+######################
+#	图片显示效果
+######################
 # Fancybox
 fancybox: true
 
