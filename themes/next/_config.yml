@@ -12,7 +12,7 @@ favicon: /favicon.ico
 #	默认关键字
 ######################
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "郭文奇的个人博客"
 
 ######################
 #	RSS订阅
@@ -49,6 +49,7 @@ menu:
   tags: /tags
   #commonweal: /404.html
   photos: /photos
+  doubanshow: /doubanshow
 
 
 ######################
@@ -69,6 +70,7 @@ menu_icons:
   archives: archive
   commonweal: heartbeat
   photos: photo
+  doubanshow: book
 
 
 
@@ -154,6 +156,7 @@ social:
   GitHub: https://github.com/guowenqi
   Weibo: http://t.qq.com/guowenqi6631
   知乎: https://www.zhihu.com/people/guo-wen-qi-97
+  CSDN: http://blog.csdn.net/u010233882
 
 ######################
 #	社交链接图标
@@ -171,6 +174,7 @@ social_icons:
   Twitter: twitter
   Weibo: tencent-weibo
   知乎: graduation-cap
+  CSDN: bank
 
 ######################
 #	头像

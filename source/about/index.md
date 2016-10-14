@@ -8,11 +8,11 @@ date: 2016-10-08 16:15:58
 
 >毕业于湖北理工
 >
->90后     双鱼座     奋斗ing
+>90后&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;双鱼座&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;奋斗ing
 >
->IT民工    乐观  	  低调
+>IT民工&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乐观&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;低调
 >
->CF  	  LOL  	  游泳  	  钓鱼
+>CF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;游泳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;钓鱼
 
 ## 联系方式
 
@@ -28,4 +28,5 @@ date: 2016-10-08 16:15:58
 
 ##### 最近访客
 <div class="ds-recent-visitors" data-num-items="28" data-avatar-size="42" id="ds-recent-visitors"></div>
+
 
