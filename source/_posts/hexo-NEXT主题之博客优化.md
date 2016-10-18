@@ -8,7 +8,24 @@ categories: [hexo博客搭建与优化]
 hexo版本：3.2.2
 主题：NEXT主题
 主题版本：5.0.1
-
+## 关闭换行符警告：
+执行hexo d命令时，会产生警告如下：warning: LF will be replaced by CRLF
+执行命令
+```
+git config --global core.autocrlf false
+```
+false表示取消自动转换功能。适合纯Windows
+true表示提交代码时把CRLF转换成LF，签出时LF转换成CRLF。适合多平台协作
+input表示提交时把CRLF转换成LF，签出时不转换。适合纯Linux或Mac
+说明：
+LF为换行符，CR为回车符。Windows结束一行用CRLF，Mac和Linux用LF。Git默认在你提交时自动地把行结束符CRLF转换成LF，而在签出代码时把LF转换成CRLF
+补充：
+Git还提供了一个换行符检查功能core.safecrlf，可以在提交时检查文件是否混用了不同风格的换行符。可以用同样的命令更改设置。
+选项如下：
+false - 不做任何检查
+warn - 在提交时检查并警告
+true - 在提交时检查，如果发现混用则拒绝提交
+建议使用最严格的 true 选项
 ## 设置头像：
 将选中的图标文件放到your-hexo-site/themes/source/images目录下，命名为avatar.png，然后编辑站点配置文件，新增字段
 ```
@@ -116,6 +133,7 @@ app_key: xxx
 （疑问：只有网站中文章数大于等于两篇时，才不会在首页每按一次刷新，文章阅读数量就加一的现象）
 
 ## 不蒜子统计：
+方法一：
 显示站点UV和站点PV值，不显示单页面PV（文章阅读数），以免和LeanCLoud统计的文章阅读数重复，编辑主题配置文件，修改字段如下：
 ```
 busuanzi_count:
@@ -133,6 +151,15 @@ site_pv_footer:
 page_pv: false
 page_pv_header: <i class="fa fa-file-o"></i>
 page_pv_footer:
+```
+方法二：
+主题配置文件不变，修改your-hexo-site/themes/next/layout/_partials/footer.swig文件，在文件结尾处增加如下代码：
+```
+&nbsp;&nbsp;|&nbsp;&nbsp;本页点击 <span id="busuanzi_value_page_pv"></span> 次
+&nbsp;&nbsp;|&nbsp;&nbsp;本站总点击 <span id="busuanzi_value_site_pv"></span> 次
+&nbsp;&nbsp;|&nbsp;&nbsp;您是第 <span id="busuanzi_value_site_uv"></span> 位访客
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 ```
 ## 热评文章：
 编辑主题配置文件，增加字段：
@@ -197,14 +224,107 @@ sitemap:
 baidusitemap:
 path: baidusitemap.xml
 ```
+## 底栏显示百度和谷歌站点地图链接：
+修改your-hexo-site/themes/next/layout/_partials/footer.swig文件，增加如下代码：
+```
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span><a href="/sitemap.xml">Google网站地图</a></span>
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span><a href="/baidusitemap.xml">百度网站地图</a></span>
+```
+## 百度自动推送：
+修改/themes/next/layout/_partials/footer.swig文件，在文件结尾处增加如下代码：
+```
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+```
+注：通过实现不蒜子统计、底栏显示百度和谷歌站点地图链接、百度自动推送三个功能对your-hexo-site/themes/next/layout/_partials/footer.swig文件的修改，footer.swig文件的最终内容为：
+```
+<div class="copyright" >
+  {% set current = date(Date.now(), "YYYY") %}
+  &copy; {% if theme.since and theme.since != current %} {{ theme.since }} - {% endif %}
+  <span itemprop="copyrightYear">{{ current }}</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">{{ config.author }}
+  
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span><a href="/sitemap.xml">Google网站地图</a></span>
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span><a href="/baidusitemap.xml">百度网站地图</a></span>
+  
+  </span>
+</div>
+
+<div class="powered-by">
+  {{ __('footer.powered', '<a class="theme-link" href="http://hexo.io">Hexo</a>') }}
+</div>
+
+<div class="theme-info">
+  {{ __('footer.theme') }} -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.{{ theme.scheme }}
+  </a>
+</div>
+
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;本站总点击 <span id="busuanzi_value_site_pv"></span> 次
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;您是第 <span id="busuanzi_value_site_uv"></span> 位访客
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+```
 ## 向百度和谷歌提交站点地图：
+[戳我](http://www.joryhe.com/2016-05-31-baidu_google_both_tijiao.html)
 ## 音乐插件：
-## hexo博客版权：
+在about页面添加音乐播放功能
+登录网易云音乐，找到喜欢的歌曲，点击生成外链播放器，复制生成的代码，，编辑your-hexo-site/source/about文件夹下的index.md文件，将外链播放器代码复制进来
+## hexo博客版权声明：
+编辑主题配置文件，修改字段如下
+```
+creative_commons: by-nc-sa
+```
 ## 最近文章：
 ## 图床：
 ## 豆瓣收藏秀：
+按照第8条：创建标签、分类、关于页面，创建一个新的页面，登录豆瓣收藏秀，复制生成的豆瓣秀代码，编辑该页的index.md文件，将豆瓣秀的代码复制进来
 ## 首页标题的优化：
-
+使你的网站首页标题会更符合网站名称 - 网站描述的习惯，修改your-hexo-site/themes/next/layout/index.swig文件，将下面代码：
+```
+{% block title %} {{ config.title }} {% endblock %}
+```
+更改为：
+```
+{% block title %} {{ config.title }} - {{ theme.description }} {% endblock %}
+```
+可以把关键词也显示在Title标题里，可改成：
+```
+{% block title %} {{ theme.keywords }} - {{ config.title }} - {{ theme.description }} {% endblock %}
+```
+关键词可以在主题配置文件，keywords字段填写
 ## 最近访客：
 在关于页面添加最近访客功能，编辑your-hexo-site/source/about文件夹下的index.md文件，增加代码：
 ```
@@ -244,7 +364,7 @@ menu:
   commonweal: 公益404
   photos: 相册
 ```
-然后为相册页在菜单下的链接添加图标，访问[Font Awesome](http://fontawesome.io/icons/)()(fontawesome.io)，找到喜欢的图标，记录下图标的关键字，再编辑主题配置文件，增加photos的图标，修改menu_icons字段如下：
+然后为相册页在菜单下的链接添加图标，访问[Font Awesome](http://fontawesome.io/icons/)(fontawesome.io)，找到喜欢的图标，记录下图标的关键字，再编辑主题配置文件，增加photos的图标，修改menu_icons字段如下：
 ```
 menu_icons:
   enable: true
@@ -257,4 +377,33 @@ menu_icons:
   commonweal: heartbeat
   photos: photo
 ```
+上传图片
+编辑your-hexo-site/source/photos/index.md文件，增加代码如下：
+```
+{% raw %}
+<style>
+.photo img{
+  border: 1px solid #999;
+  height:150px;
+  width: 150px;
+}
+.photo li{
+    margin: 10px;
+    float: left;
+    list-style: none;
+}
+</style>
+
+<div class="photo">
+{% endraw %}
+
+* ![](URL)
+* ![](URL)
+* ![](URL)
+
+{% raw %}
+</div>
+{% endraw %}
+```
+注：URL替换为你的图片链接
 

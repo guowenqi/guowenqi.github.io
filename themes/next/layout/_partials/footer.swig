@@ -5,7 +5,12 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">{{ config.author }}</span>
+  <span class="author" itemprop="copyrightHolder">{{ config.author }}
+  
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span><a href="/sitemap.xml">Google网站地图</a></span>
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span><a href="/baidusitemap.xml">百度网站地图</a></span>
+  
+  </span>
 </div>
 
 <div class="powered-by">
@@ -18,6 +23,11 @@
     NexT.{{ theme.scheme }}
   </a>
 </div>
+
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;本站总点击 <span id="busuanzi_value_site_pv"></span> 次
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;您是第 <span id="busuanzi_value_site_uv"></span> 位访客
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 
 <script>
 (function(){
