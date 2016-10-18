@@ -7,6 +7,7 @@ categories: [hexo博客搭建与优化]
 ## 说明
 hexo版本：3.2.2
 主题：NEXT主题
+主题版本：5.0.1
 
 ## 设置头像：
 将选中的图标文件放到your-hexo-site/themes/source/images目录下，命名为avatar.png，然后编辑站点配置文件，新增字段
