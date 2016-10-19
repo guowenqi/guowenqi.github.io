@@ -14,6 +14,7 @@ hexo版本：3.2.2
 ```
 git config --global core.autocrlf false
 ```
+<!--more-->
 false表示取消自动转换功能。适合纯Windows
 true表示提交代码时把CRLF转换成LF，签出时LF转换成CRLF。适合多平台协作
 input表示提交时把CRLF转换成LF，签出时不转换。适合纯Linux或Mac
@@ -33,7 +34,6 @@ avatar: /images/avatar.png
 ```
 ## 网站LOGO：
 将选中的图标文件放到your-hexo-site/source目录下，命名为favicon.ico
-<!--more-->
 ## rss订阅：
 执行命令
 ```
@@ -102,7 +102,7 @@ comments: false
 ```
 duoshuo_shortname: xxx
 ```
-(登录多说，依次点击后台管理->设置，得到自己所设的域名，xxx.duoshuo.com)
+注：登录多说，依次点击后台管理->设置，得到自己所设的域名，xxx.duoshuo.com
 ```
 duoshuo_info:  
 ua_enable: true 
@@ -110,7 +110,7 @@ admin_enable: true
 user_id: xxx
 admin_nickname: Administrator
 ```
-（登录多说，依次点击个人资料->自己的昵称，查看当前网页的网址，网址最后的一长串数字就是user_id，例：http://duoshuo.com/profile/xxx/;xxx就是你的user_id，Administrator可随意更改
+注：登录多说，依次点击个人资料->自己的昵称，查看当前网页的网址，网址最后的一长串数字就是user_id，例：http://duoshuo.com/profile/xxx/；其中xxx就是你的user_id，Administrator可随意更改
 
 ## 多说评论显示方式：
 登录多说，依次点击后台管理->所管理的网站->设置，可以设置多说评论显示方式
@@ -222,7 +222,7 @@ npm install hexo-generator-baidu-sitemap --save
 sitemap:
     path: sitemap.xml
 baidusitemap:
-path: baidusitemap.xml
+	path: baidusitemap.xml
 ```
 ## 底栏显示百度和谷歌站点地图链接：
 修改your-hexo-site/themes/next/layout/_partials/footer.swig文件，增加如下代码：
