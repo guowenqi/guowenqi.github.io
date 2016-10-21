@@ -535,8 +535,8 @@ version: 5.0.1
 ######################
 #	打赏功能
 ######################
-reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
-wechatpay: /wechatpay.png
+#reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
+#wechatpay: /wechatpay.png
 
 ######################
 #	站点地图
