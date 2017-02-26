@@ -1,0 +1,1068 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="hexo," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="mway.top" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="进入多说官网（duoshuo.com），登录账号，依次点击后台管理-&amp;gt;设置，找到自定义CSS，将下面九段代码中的任意一段复制到自定义CSS文本框，即可实现多说评论的美化。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo+多说评论自定义CSS效果">
+<meta property="og:url" content="http://guowenqi.github.io/2016/10/17/hexo-多说评论自定义CSS效果/index.html">
+<meta property="og:site_name" content="mway.top">
+<meta property="og:description" content="进入多说官网（duoshuo.com），登录账号，依次点击后台管理-&amp;gt;设置，找到自定义CSS，将下面九段代码中的任意一段复制到自定义CSS文本框，即可实现多说评论的美化。">
+<meta property="og:updated_time" content="2017-02-26T11:24:04.857Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo+多说评论自定义CSS效果">
+<meta name="twitter:description" content="进入多说官网（duoshuo.com），登录账号，依次点击后台管理-&amp;gt;设置，找到自定义CSS，将下面九段代码中的任意一段复制到自定义CSS文本框，即可实现多说评论的美化。">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6339268847681406000,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> hexo+多说评论自定义CSS效果 | mway.top </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?816d618251c510b2cadd76e4dafc7cfb";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">mway.top</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">郭文奇的个人博客</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-photos">
+          <a href="/photos" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-photo"></i> <br />
+            
+            相册
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-doubanshow">
+          <a href="/doubanshow" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            豆瓣
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                hexo+多说评论自定义CSS效果
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-17T17:08:04+08:00" content="2016-10-17">
+              2016-10-17
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/hexo博客搭建与优化/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo博客搭建与优化</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/17/hexo-多说评论自定义CSS效果/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/17/hexo-多说评论自定义CSS效果/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/10/17/hexo-多说评论自定义CSS效果/" class="leancloud_visitors" data-flag-title="hexo+多说评论自定义CSS效果">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>进入<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a>官网（duoshuo.com），登录账号，依次点击后台管理-&gt;设置，找到自定义CSS，将下面九段代码中的任意一段复制到自定义CSS文本框，即可实现多说评论的美化。<br><a id="more"></a></p>
+<h2 id="效果一："><a href="#效果一：" class="headerlink" title="效果一："></a>效果一：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">#ds-reset .ds-avatar img,#ds-reset .ds-avatar img:hover&#123; -webkit-animation-fill-mode: both; -moz-animation-fill-mode: both;</div><div class="line">-ms-animation-fill-mode: both; -o-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-duration: 0s;</div><div class="line">-moz-animation-duration: 0s; -ms-animation-duration: 0s; -o-animation-duration: 0s; animation-duration: 0s;</div><div class="line">-webkit-animation-duration: 1s; -moz-animation-duration: 1s; -ms-animation-duration: 1s; -o-animation-duration: 1s;</div><div class="line">animation-duration: 1s; &#125; @-webkit-keyframes rotateInDownLeft &#123; 0% &#123; -webkit-transform-origin: left bottom; -webkit-transform:</div><div class="line">rotate(-90deg); opacity: 0; &#125; 100% &#123; -webkit-transform-origin: left bottom; -webkit-transform: rotate(0); opacity: 1; &#125; &#125;</div><div class="line">@-moz-keyframes rotateInDownLeft &#123; 0% &#123; -moz-transform-origin: left bottom; -moz-transform: rotate(-90deg); opacity: 0; &#125; 100% &#123;</div><div class="line">-moz-transform-origin: left bottom; -moz-transform: rotate(0); opacity: 1; &#125; &#125; @-o-keyframes rotateInDownLeft &#123; 0% &#123;</div><div class="line">-o-transform-origin: left bottom; -o-transform: rotate(-90deg); opacity: 0; &#125; 100% &#123; -o-transform-origin: left bottom; -o-transform:</div><div class="line">rotate(0); opacity: 1; &#125; &#125; @keyframes rotateInDownLeft &#123; 0% &#123; transform-origin: left bottom; transform: rotate(-90deg); opacity: 0; &#125;</div><div class="line">100% &#123; transform-origin: left bottom; transform: rotate(0); opacity: 1; &#125; &#125; #ds-reset .ds-avatar img&#123; -webkit-animation-name:</div><div class="line">rotateInDownLeft; -moz-animation-name: rotateInDownLeft; -o-animation-name: rotateInDownLeft; animation-name: rotateInDownLeft; &#125;</div><div class="line">#ds-reset .ds-avatar img:hover&#123; -webkit-animation-name: rotateOutDownLeft; -moz-animation-name: rotateOutDownLeft; -o-animation-name:</div><div class="line">rotateOutDownLeft; animation-name: rotateOutDownLeft; &#125; @-webkit-keyframes rotateOutDownLeft &#123; 0% &#123; -webkit-transform-origin: left</div><div class="line">bottom; -webkit-transform: rotate(0); opacity: 1; &#125; 100% &#123; -webkit-transform-origin: left bottom; -webkit-transform: rotate(90deg);</div><div class="line">opacity: 0; &#125; &#125; @-moz-keyframes rotateOutDownLeft &#123; 0% &#123; -moz-transform-origin: left bottom; -moz-transform: rotate(0); opacity: 1; &#125;</div><div class="line">100% &#123; -moz-transform-origin: left bottom; -moz-transform: rotate(90deg); opacity: 0; &#125; &#125; @-o-keyframes rotateOutDownLeft &#123; 0% &#123;</div><div class="line">-o-transform-origin: left bottom; -o-transform: rotate(0); opacity: 1; &#125; 100% &#123; -o-transform-origin: left bottom; -o-transform:</div><div class="line">rotate(90deg); opacity: 0; &#125; &#125; @keyframes rotateOutDownLeft &#123; 0% &#123; transform-origin: left bottom; transform: rotate(0); opacity: 1; &#125;</div><div class="line">100% &#123; transform-origin: left bottom; transform: rotate(90deg); opacity: 0; &#125; &#125;</div></pre></td></tr></table></figure>
+<h2 id="效果二："><a href="#效果二：" class="headerlink" title="效果二："></a>效果二：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">#ds-reset .ds-avatar img,#ds-reset .ds-avatar img:hover&#123; -webkit-animation-fill-mode: both; -moz-animation-fill-mode: both;</div><div class="line">-ms-animation-fill-mode: both; -o-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-duration: 0s;</div><div class="line">-moz-animation-duration: 0s; -ms-animation-duration: 0s; -o-animation-duration: 0s; animation-duration: 0s;</div><div class="line">-webkit-animation-duration: 0.7s; -moz-animation-duration: 0.7s; -ms-animation-duration: 0.7s; -o-animation-duration: 0.7s;</div><div class="line">animation-duration: 0.7s; &#125; @-webkit-keyframes bounceIn &#123; 0% &#123; opacity: 0; -webkit-transform: scale(.3); &#125; 50% &#123; opacity: 1;</div><div class="line">-webkit-transform: scale(1.05); &#125; 70% &#123; -webkit-transform: scale(.9); &#125; 100% &#123; -webkit-transform: scale(1); &#125; &#125; @-moz-keyframes</div><div class="line">bounceIn &#123; 0% &#123; opacity: 0; -moz-transform: scale(.3); &#125; 50% &#123; opacity: 1; -moz-transform: scale(1.05); &#125; 70% &#123; -moz-transform:</div><div class="line">scale(.9); &#125; 100% &#123; -moz-transform: scale(1); &#125; &#125; @-o-keyframes bounceIn &#123; 0% &#123; opacity: 0; -o-transform: scale(.3); &#125; 50% &#123; opacity:</div><div class="line">1; -o-transform: scale(1.05); &#125; 70% &#123; -o-transform: scale(.9); &#125; 100% &#123; -o-transform: scale(1); &#125; &#125; @keyframes bounceIn &#123; 0% &#123;</div><div class="line">opacity: 0; transform: scale(.3); &#125; 50% &#123; opacity: 1; transform: scale(1.05); &#125; 70% &#123; transform: scale(.9); &#125; 100% &#123; transform:</div><div class="line">scale(1); &#125; &#125; #ds-reset .ds-avatar img &#123; -webkit-animation-name: bounceIn; -moz-animation-name: bounceIn; -o-animation-name:</div><div class="line">bounceIn; animation-name: bounceIn; &#125; @-webkit-keyframes bounceOut &#123; 0% &#123; -webkit-transform: scale(1); &#125; 25% &#123; -webkit-transform:</div><div class="line">scale(.95); &#125; 50% &#123; opacity: 1; -webkit-transform: scale(1.1); &#125; 100% &#123; opacity: 0; -webkit-transform: scale(.3); &#125; &#125; @-moz-keyframes</div><div class="line">bounceOut &#123; 0% &#123; -moz-transform: scale(1); &#125; 25% &#123; -moz-transform: scale(.95); &#125; 50% &#123; opacity: 1; -moz-transform: scale(1.1); &#125; 100%</div><div class="line">&#123; opacity: 0; -moz-transform: scale(.3); &#125; &#125; @-o-keyframes bounceOut &#123; 0% &#123; -o-transform: scale(1); &#125; 25% &#123; -o-transform: scale(.95);</div><div class="line">&#125; 50% &#123; opacity: 1; -o-transform: scale(1.1); &#125; 100% &#123; opacity: 0; -o-transform: scale(.3); &#125; &#125; @keyframes bounceOut &#123; 0% &#123;</div><div class="line">transform: scale(1); &#125; 25% &#123; transform: scale(.95); &#125; 50% &#123; opacity: 1; transform: scale(1.1); &#125; 100% &#123; opacity: 0; transform:</div><div class="line">scale(.3); &#125; &#125; #ds-reset .ds-avatar img:hover&#123; -webkit-animation-name: bounceOut; -moz-animation-name: bounceOut; -o-animation-name:</div><div class="line">bounceOut; animation-name: bounceOut; &#125;</div></pre></td></tr></table></figure>
+<h2 id="效果三："><a href="#效果三：" class="headerlink" title="效果三："></a>效果三：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">#ds-reset .ds-avatar img,#ds-reset .ds-avatar img:hover&#123; -webkit-animation-fill-mode: both; -moz-animation-fill-mode: both;</div><div class="line">-ms-animation-fill-mode: both; -o-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-duration: 0s;</div><div class="line">-moz-animation-duration: 0s; -ms-animation-duration: 0s; -o-animation-duration: 0s; animation-duration: 0s;</div><div class="line">-webkit-animation-duration: 0.7s; -moz-animation-duration: 0.7s; -ms-animation-duration: 0.7s; -o-animation-duration: 0.7s;</div><div class="line">animation-duration: 0.7s; &#125; @-webkit-keyframes rotateIn &#123; 0% &#123; -webkit-transform-origin: center center; -webkit-transform:</div><div class="line">rotate(-150deg); opacity: 0; &#125; 100% &#123; -webkit-transform-origin: center center; -webkit-transform: rotate(0); opacity: 1; &#125; &#125;</div><div class="line">@-moz-keyframes rotateIn &#123; 0% &#123; -moz-transform-origin: center center; -moz-transform: rotate(-150deg); opacity: 0; &#125; 100% &#123;</div><div class="line">-moz-transform-origin: center center; -moz-transform: rotate(0); opacity: 1; &#125; &#125; @-o-keyframes rotateIn &#123; 0% &#123; -o-transform-origin:</div><div class="line">center center; -o-transform: rotate(-150deg); opacity: 0; &#125; 100% &#123; -o-transform-origin: center center; -o-transform: rotate(0);</div><div class="line">opacity: 1; &#125; &#125; @keyframes rotateIn &#123; 0% &#123; transform-origin: center center; transform: rotate(-150deg); opacity: 0; &#125; 100% &#123;</div><div class="line">transform-origin: center center; transform: rotate(0); opacity: 1; &#125; &#125; #ds-reset .ds-avatar img&#123; -webkit-animation-name: rotateIn;</div><div class="line">-moz-animation-name: rotateIn; -o-animation-name: rotateIn; animation-name: rotateIn; &#125; @-webkit-keyframes rotateOut &#123; 0% &#123;</div><div class="line">-webkit-transform-origin: center center; -webkit-transform: rotate(0); opacity: 1; &#125; 100% &#123; -webkit-transform-origin: center center;</div><div class="line">-webkit-transform: rotate(150deg); opacity: 0; &#125; &#125; @-moz-keyframes rotateOut &#123; 0% &#123; -moz-transform-origin: center center;</div><div class="line">-moz-transform: rotate(0); opacity: 1; &#125; 100% &#123; -moz-transform-origin: center center; -moz-transform: rotate(150deg); opacity: 0; &#125; &#125;</div><div class="line">@-o-keyframes rotateOut &#123; 0% &#123; -o-transform-origin: center center; -o-transform: rotate(0); opacity: 1; &#125; 100% &#123; -o-transform-origin:</div><div class="line">center center; -o-transform: rotate(150deg); opacity: 0; &#125; &#125; @keyframes rotateOut &#123; 0% &#123; transform-origin: center center; transform:</div><div class="line">rotate(0); opacity: 1; &#125; 100% &#123; transform-origin: center center; transform: rotate(150deg); opacity: 0; &#125; &#125; #ds-reset .ds-avatar</div><div class="line">img:hover&#123; -webkit-animation-name: rotateOut; -moz-animation-name: rotateOut; -o-animation-name: rotateOut; animation-name:</div><div class="line">rotateOut; &#125;</div></pre></td></tr></table></figure>
+<h2 id="效果四："><a href="#效果四：" class="headerlink" title="效果四："></a>效果四：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">#ds-reset .ds-avatar img,#ds-reset .ds-avatar img:hover&#123; -webkit-animation-fill-mode: both; -moz-animation-fill-mode: both;</div><div class="line">-ms-animation-fill-mode: both; -o-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-duration: 0s;</div><div class="line">-moz-animation-duration: 0s; -ms-animation-duration: 0s; -o-animation-duration: 0s; animation-duration: 0s;</div><div class="line">-webkit-animation-duration: 0.7s; -moz-animation-duration: 0.7s; -ms-animation-duration: 0.7s; -o-animation-duration: 0.7s;</div><div class="line">animation-duration: 0.7s; &#125; @-webkit-keyframes rollIn &#123; 0% &#123; opacity: 0; -webkit-transform: translateX(-100%) rotate(-120deg); &#125; 100%</div><div class="line">&#123; opacity: 1; -webkit-transform: translateX(0px) rotate(0deg); &#125; &#125; @-moz-keyframes rollIn &#123; 0% &#123; opacity: 0; -moz-transform:</div><div class="line">translateX(-100%) rotate(-120deg); &#125; 100% &#123; opacity: 1; -moz-transform: translateX(0px) rotate(0deg); &#125; &#125; @-o-keyframes rollIn &#123; 0% &#123;</div><div class="line">opacity: 0; -o-transform: translateX(-100%) rotate(-120deg); &#125; 100% &#123; opacity: 1; -o-transform: translateX(0px) rotate(0deg); &#125; &#125;</div><div class="line">@keyframes rollIn &#123; 0% &#123; opacity: 0; transform: translateX(-100%) rotate(-120deg); &#125; 100% &#123; opacity: 1; transform: translateX(0px)</div><div class="line">rotate(0deg); &#125; &#125; #ds-reset .ds-avatar img&#123; -webkit-animation-name: rollIn; -moz-animation-name: rollIn; -o-animation-name: rollIn;</div><div class="line">animation-name: rollIn; &#125; @-webkit-keyframes rollOut &#123; 0% &#123; opacity: 1; -webkit-transform: translateX(0px) rotate(0deg); &#125; 100% &#123;</div><div class="line">opacity: 0; -webkit-transform: translateX(100%) rotate(120deg); &#125; &#125; @-moz-keyframes rollOut &#123; 0% &#123; opacity: 1; -moz-transform:</div><div class="line">translateX(0px) rotate(0deg); &#125; 100% &#123; opacity: 0; -moz-transform: translateX(100%) rotate(120deg); &#125; &#125; @-o-keyframes rollOut &#123; 0% &#123;</div><div class="line">opacity: 1; -o-transform: translateX(0px) rotate(0deg); &#125; 100% &#123; opacity: 0; -o-transform: translateX(100%) rotate(120deg); &#125; &#125;</div><div class="line">@keyframes rollOut &#123; 0% &#123; opacity: 1; transform: translateX(0px) rotate(0deg); &#125; 100% &#123; opacity: 0; transform: translateX(100%)</div><div class="line">rotate(120deg); &#125; &#125; #ds-reset .ds-avatar img:hover&#123; -webkit-animation-name: rollOut; -moz-animation-name: rollOut; -o-animation-name:</div><div class="line">rollOut; animation-name: rollOut; &#125;</div></pre></td></tr></table></figure>
+<h2 id="效果五："><a href="#效果五：" class="headerlink" title="效果五："></a>效果五：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">#ds-reset .ds-avatar img,#ds-reset .ds-avatar img:hover&#123; -webkit-animation-fill-mode: both; -moz-animation-fill-mode: both;</div><div class="line">-ms-animation-fill-mode: both; -o-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-duration: 0s;</div><div class="line">-moz-animation-duration: 0s; -ms-animation-duration: 0s; -o-animation-duration: 0s; animation-duration: 0s;</div><div class="line">-webkit-animation-duration: 0.7s; -moz-animation-duration: 0.7s; -ms-animation-duration: 0.7s; -o-animation-duration: 0.7s;</div><div class="line">animation-duration: 0.7s; &#125; @-webkit-keyframes swing &#123; 20%, 40%, 60%, 80%, 100% &#123; -webkit-transform-origin: top center; &#125; 20% &#123;</div><div class="line">-webkit-transform: rotate(15deg); &#125; 40% &#123; -webkit-transform: rotate(-10deg); &#125; 60% &#123; -webkit-transform: rotate(5deg); &#125; 80% &#123;</div><div class="line">-webkit-transform: rotate(-5deg); &#125; 100% &#123; -webkit-transform: rotate(0deg); &#125; &#125; @-moz-keyframes swing &#123; 20% &#123; -moz-transform:</div><div class="line">rotate(15deg); &#125; 40% &#123; -moz-transform: rotate(-10deg); &#125; 60% &#123; -moz-transform: rotate(5deg); &#125; 80% &#123; -moz-transform: rotate(-5deg); &#125;</div><div class="line">100% &#123; -moz-transform: rotate(0deg); &#125; &#125; @-o-keyframes swing &#123; 20% &#123; -o-transform: rotate(15deg); &#125; 40% &#123; -o-transform:</div><div class="line">rotate(-10deg); &#125; 60% &#123; -o-transform: rotate(5deg); &#125; 80% &#123; -o-transform: rotate(-5deg); &#125; 100% &#123; -o-transform: rotate(0deg); &#125; &#125;</div><div class="line">@keyframes swing &#123; 20% &#123; transform: rotate(15deg); &#125; 40% &#123; transform: rotate(-10deg); &#125; 60% &#123; transform: rotate(5deg); &#125; 80% &#123;</div><div class="line">transform: rotate(-5deg); &#125; 100% &#123; transform: rotate(0deg); &#125; &#125; #ds-reset .ds-avatar img:hover&#123; -webkit-transform-origin: top center;</div><div class="line">-moz-transform-origin: top center; -o-transform-origin: top center; transform-origin: top center; -webkit-animation-name: swing;</div><div class="line">-moz-animation-name: swing; -o-animation-name: swing; animation-name: swing; &#125;</div></pre></td></tr></table></figure>
+<h2 id="效果六："><a href="#效果六：" class="headerlink" title="效果六："></a>效果六：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">#ds-reset .ds-avatar img,#ds-reset .ds-avatar img:hover&#123; -webkit-animation-fill-mode: both; -moz-animation-fill-mode: both;</div><div class="line">-ms-animation-fill-mode: both; -o-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-duration: 0s;</div><div class="line">-moz-animation-duration: 0s; -ms-animation-duration: 0s; -o-animation-duration: 0s; animation-duration: 0s;</div><div class="line">-webkit-animation-duration: 0.7s; -moz-animation-duration: 0.7s; -ms-animation-duration: 0.7s; -o-animation-duration: 0.7s;</div><div class="line">animation-duration: 0.7s; &#125; @-webkit-keyframes pulse &#123; 0% &#123; -webkit-transform: scale(1); &#125; 50% &#123; -webkit-transform: scale(1.1); &#125;</div><div class="line">100% &#123; -webkit-transform: scale(1); &#125; &#125; @-moz-keyframes pulse &#123; 0% &#123; -moz-transform: scale(1); &#125; 50% &#123; -moz-transform: scale(1.1); &#125;</div><div class="line">100% &#123; -moz-transform: scale(1); &#125; &#125; @-o-keyframes pulse &#123; 0% &#123; -o-transform: scale(1); &#125; 50% &#123; -o-transform: scale(1.1); &#125; 100% &#123;</div><div class="line">-o-transform: scale(1); &#125; &#125; @keyframes pulse &#123; 0% &#123; transform: scale(1); &#125; 50% &#123; transform: scale(1.1); &#125; 100% &#123; transform: scale(1);</div><div class="line">&#125; &#125; #ds-reset .ds-avatar img:hover &#123; -webkit-animation-name: pulse; -moz-animation-name: pulse; -o-animation-name: pulse;</div><div class="line">animation-name: pulse; &#125;</div></pre></td></tr></table></figure>
+<h2 id="效果七："><a href="#效果七：" class="headerlink" title="效果七："></a>效果七：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">#ds-reset .ds-avatar img,#ds-reset .ds-avatar img:hover&#123; -webkit-animation-fill-mode: both; -moz-animation-fill-mode: both;</div><div class="line">-ms-animation-fill-mode: both; -o-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-duration: 0s;</div><div class="line">-moz-animation-duration: 0s; -ms-animation-duration: 0s; -o-animation-duration: 0s; animation-duration: 0s; </div><div class="line">-webkit-animation-duration: 0.7s; -moz-animation-duration: 0.7s; -ms-animation-duration: 0.7s; -o-animation-duration: 0.7s; </div><div class="line">animation-duration: 0.7s; &#125; @-webkit-keyframes wobble &#123; 0% &#123; -webkit-transform: translateX(0%); &#125; 15% &#123; -webkit-transform: </div><div class="line">translateX(-25%) rotate(-5deg); &#125; 30% &#123; -webkit-transform: translateX(20%) rotate(3deg); &#125; 45% &#123; -webkit-transform: translateX(-15%) </div><div class="line">rotate(-3deg); &#125; 60% &#123; -webkit-transform: translateX(10%) rotate(2deg); &#125; 75% &#123; -webkit-transform: translateX(-5%) rotate(-1deg); &#125; </div><div class="line">100% &#123; -webkit-transform: translateX(0%); &#125; &#125; @-moz-keyframes wobble &#123; 0% &#123; -moz-transform: translateX(0%); &#125; 15% &#123; -moz-transform: </div><div class="line">translateX(-25%) rotate(-5deg); &#125; 30% &#123; -moz-transform: translateX(20%) rotate(3deg); &#125; 45% &#123; -moz-transform: translateX(-15%) </div><div class="line">rotate(-3deg); &#125; 60% &#123; -moz-transform: translateX(10%) rotate(2deg); &#125; 75% &#123; -moz-transform: translateX(-5%) rotate(-1deg); &#125; 100% &#123; </div><div class="line">-moz-transform: translateX(0%); &#125; &#125; @-o-keyframes wobble &#123; 0% &#123; -o-transform: translateX(0%); &#125; 15% &#123; -o-transform: translateX(-25%) </div><div class="line">rotate(-5deg); &#125; 30% &#123; -o-transform: translateX(20%) rotate(3deg); &#125; 45% &#123; -o-transform: translateX(-15%) rotate(-3deg); &#125; 60% &#123; </div><div class="line">-o-transform: translateX(10%) rotate(2deg); &#125; 75% &#123; -o-transform: translateX(-5%) rotate(-1deg); &#125; 100% &#123; -o-transform: </div><div class="line">translateX(0%); &#125; &#125; @keyframes wobble &#123; 0% &#123; transform: translateX(0%); &#125; 15% &#123; transform: translateX(-25%) rotate(-5deg); &#125; 30% &#123; </div><div class="line">transform: translateX(20%) rotate(3deg); &#125; 45% &#123; transform: translateX(-15%) rotate(-3deg); &#125; 60% &#123; transform: translateX(10%) </div><div class="line">rotate(2deg); &#125; 75% &#123; transform: translateX(-5%) rotate(-1deg); &#125; 100% &#123; transform: translateX(0%); &#125; &#125; #ds-reset .ds-avatar </div><div class="line">img:hover&#123; -webkit-animation-name: wobble; -moz-animation-name: wobble; -o-animation-name: wobble; animation-name: wobble; &#125;</div></pre></td></tr></table></figure>
+<h2 id="效果八："><a href="#效果八：" class="headerlink" title="效果八："></a>效果八：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">#ds-reset .ds-avatar img&#123; width:54px;height:54px; /*设置图像的长和宽，这里要根据自己的评论框情况更改*/ border-radius: </div><div class="line">27px;/*设置图像圆角效果,在这里我直接设置了超过width/2的像素，即为圆形了*/ -webkit-border-radius: 27px;/*圆角效果：兼容webkit浏览器*/</div><div class="line">-moz-border-radius:27px; box-shadow: inset 0 -1px 0 #3333sf;/*设置图像阴影效果*/ -webkit-box-shadow: inset 0 -1px 0 #3333sf; </div><div class="line">-webkit-transition: 0.4s; -webkit-transition: -webkit-transform 0.4s ease-out; transition: transform 0.4s </div><div class="line">ease-out;/*变化时间设置为0.4秒(变化动作即为下面的图像旋转360读）*/ -moz-transition: -moz-transform 0.4s ease-out; &#125; #ds-reset </div><div class="line">.ds-avatar img:hover&#123;/*设置鼠标悬浮在头像时的CSS样式*/ box-shadow: 0 0 10px #fff; rgba(255,255,255,.6), inset 0 0 20px </div><div class="line">rgba(255,255,255,1); -webkit-box-shadow: 0 0 10px #fff; rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1); transform: </div><div class="line">rotateZ(360deg);/*图像旋转360度*/ -webkit-transform: rotateZ(360deg); -moz-transform: rotateZ(360deg); &#125;</div></pre></td></tr></table></figure>
+<h2 id="效果九："><a href="#效果九：" class="headerlink" title="效果九："></a>效果九：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">#ds-reset .ds-avatar img:hover &#123; -webkit-animation-fill-mode: both; -moz-animation-fill-mode: both; -ms-animation-fill-mode: both; </div><div class="line">-o-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-duration: 0s; -moz-animation-duration: 0s; </div><div class="line">-ms-animation-duration: 0s; -o-animation-duration: 0s; animation-duration: 0s; -webkit-animation-duration: 1s; </div><div class="line">-moz-animation-duration: 1s; -ms-animation-duration: 1s; -o-animation-duration: 1s; animation-duration: 1s; -webkit-transform-style: </div><div class="line">preserve-3d; -moz-transform-style: preserve-3d; -o-transform-style: preserve-3d; transform-style: preserve-3d; </div><div class="line">-webkit-backface-visibility: visible !important; -webkit-animation-name: flip; -moz-backface-visibility: visible !important; </div><div class="line">-moz-animation-name: flip; -o-backface-visibility: visible !important; -o-animation-name: flip; backface-visibility: visible </div><div class="line">!important; animation-name: flip; &#125; @-webkit-keyframes flip &#123; 0% &#123;-webkit-transform: perspective(400px) </div><div class="line">rotateY(0);-webkit-animation-timing-function: ease-out;&#125; 40% &#123;-webkit-transform: perspective(400px) translateZ(150px) </div><div class="line">rotateY(170deg);-webkit-animation-timing-function: ease-out;&#125; 50% &#123;-webkit-transform: perspective(400px) translateZ(150px) </div><div class="line">rotateY(190deg) scale(1);-webkit-animation-timing-function: ease-in;&#125; 80% &#123;-webkit-transform: perspective(400px) rotateY(360deg) </div><div class="line">scale(.95);-webkit-animation-timing-function: ease-in;&#125; 100% &#123;-webkit-transform: perspective(400px) </div><div class="line">scale(1);-webkit-animation-timing-function: ease-in;&#125; &#125; @-moz-keyframes flip &#123; 0% &#123;-moz-transform: perspective(400px) </div><div class="line">rotateY(0);-moz-animation-timing-function: ease-out;&#125; 40% &#123;-moz-transform: perspective(400px) translateZ(150px) </div><div class="line">rotateY(170deg);-moz-animation-timing-function: ease-out;&#125; 50% &#123;-moz-transform: perspective(400px) translateZ(150px) rotateY(190deg)</div><div class="line">scale(1);-moz-animation-timing-function: ease-in;&#125; 80% &#123;-moz-transform: perspective(400px) rotateY(360deg) </div><div class="line">scale(.95);-moz-animation-timing-function: ease-in;&#125; 100% &#123;-moz-transform: perspective(400px) </div><div class="line">scale(1);-moz-animation-timing-function: ease-in;&#125; &#125; @-o-keyframes flip &#123; 0% &#123;-o-transform: perspective(400px) </div><div class="line">rotateY(0);-o-animation-timing-function: ease-out;&#125; 40% &#123;-o-transform: perspective(400px) translateZ(150px) </div><div class="line">rotateY(170deg);-o-animation-timing-function: ease-out;&#125; 50% &#123;-o-transform: perspective(400px) translateZ(150px) rotateY(190deg) </div><div class="line">scale(1);-o-animation-timing-function: ease-in;&#125; 80% &#123;-o-transform: perspective(400px) rotateY(360deg) scale(.95); </div><div class="line">-o-animation-timing-function: ease-in;&#125; 100% &#123;-o-transform: perspective(400px) scale(1);-o-animation-timing-function: ease-in;&#125; &#125; </div><div class="line">@keyframes flip &#123; 0% &#123;transform: perspective(400px) rotateY(0);animation-timing-function: ease-out;&#125; 40% &#123;transform: </div><div class="line">perspective(400px) translateZ(150px) rotateY(170deg);animation-timing-function: ease-out;&#125; 50% &#123;transform: perspective(400px) </div><div class="line">translateZ(150px) rotateY(190deg) scale(1);animation-timing-function: ease-in;&#125; 80% &#123;transform: perspective(400px) rotateY(360deg)</div><div class="line">scale(.95);animation-timing-function: ease-in;&#125; 100% &#123;transform: perspective(400px) scale(1);animation-timing-function: ease-in;&#125; &#125;</div></pre></td></tr></table></figure>
+<h2 id="我的CSS"><a href="#我的CSS" class="headerlink" title="我的CSS"></a>我的CSS</h2><p>这是我的博客目前使用的CSS代码，如果你喜欢，直接拿去用吧<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div></pre></td><td class="code"><pre><div class="line">#ds-reset .ds-avatar img,</div><div class="line">#ds-recent-visitors .ds-avatar img</div><div class="line">&#123;</div><div class="line"></div><div class="line">width:54px;height:54px; /*设置图像的长和宽，这里要根据自己的评论框情况更改*/ </div><div class="line">border-radius: 27px;/*设置图像圆角效果,在这里我直接设置了超过width/2的像素，即为圆形了*/ </div><div class="line">-webkit-border-radius: 27px;/*圆角效果：兼容webkit浏览器*/ </div><div class="line">-moz-border-radius:27px; box-shadow: inset 0 -1px 0 #3333sf;/*设置图像阴影效果*/ </div><div class="line">-webkit-box-shadow: inset 0 -1px 0 #3333sf; </div><div class="line">-webkit-transition: 0.4s; </div><div class="line">-webkit-transition: </div><div class="line">-webkit-transform 0.4s ease-out; </div><div class="line">transition: transform 0.4s ease-out;/*变化时间设置为0.4秒(变化动作即为下面的图像旋转360读）*/ </div><div class="line">-moz-transition: -moz-transform 0.4s ease-out;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/*设置鼠标悬浮在头像时的CSS样式*/</div><div class="line">#ds-reset .ds-avatar img:hover,</div><div class="line">#ds-recent-visitors .ds-avatar img:hover</div><div class="line">&#123;</div><div class="line">box-shadow: 0 0 10px #fff;</div><div class="line">rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);</div><div class="line">-webkit-box-shadow: 0 0 10px #fff;</div><div class="line">rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);</div><div class="line">transform: rotateZ(360deg);/*图像旋转360度*/</div><div class="line">-webkit-transform: rotateZ(360deg);</div><div class="line">-moz-transform: rotateZ(360deg);</div><div class="line">&#125;</div><div class="line"></div><div class="line">/*最近访客头像竖着排，改成排成一列*/</div><div class="line">#ds-recent-visitors .ds-avatar &#123;float:left&#125;</div><div class="line"></div><div class="line">/*自定义评论框内的颜色，字体，大小*/</div><div class="line">#ds-thread #ds-reset .ds-textarea-wrapper textarea, #ds-thread #ds-reset .ds-textarea-wrapper .ds-hidden-text </div><div class="line">&#123;</div><div class="line">font-family: ‘微软雅黑’ ‘Microsoft Yahei’!important;</div><div class="line">font-size:15px;</div><div class="line">letter-spacing:1px;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/*评论框整体的背景色*/</div><div class="line">#ds-thread &#123;background: #ffffff;&#125;</div><div class="line"></div><div class="line">/*评论框背景</div><div class="line">#ds-thread #ds-reset .ds-textarea-wrapper textarea </div><div class="line">&#123;</div><div class="line">background: url(请填写背景图链接) right no-repeat;</div><div class="line">&#125;</div><div class="line">*/</div><div class="line"></div><div class="line">/*自定义发布按钮字体和渐变颜色*/</div><div class="line">#ds-thread #ds-reset .ds-post-button</div><div class="line">&#123;</div><div class="line">font-family: ‘微软雅黑’‘Microsoft Yahei’!important;</div><div class="line">font-weight: bold;</div><div class="line">font-size:12px;</div><div class="line">background:none !important;</div><div class="line">color:#49976b !important;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>说明：<br>最近访客头像css样式和评论css样式统一设置，代码布局如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">#ds-reset .ds-avatar img,#ds-recent-visitors .ds-avatar img</div><div class="line">&#123;</div><div class="line">在这里定义你的多说头像样式css</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>最近访客头像css样式和评论css样式分开设置，代码布局如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">#ds-reset .ds-avatar img</div><div class="line">&#123;</div><div class="line">在这里定义你的多说评论头像样式</div><div class="line">&#125;</div><div class="line"></div><div class="line">#ds-recent-visitors .ds-avatar img</div><div class="line">&#123;</div><div class="line">在这里定义你的多说最近访客头像css样式</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag">#hexo</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/17/多PC管理hexo博客/" rel="next" title="多PC管理hexo博客">
+                <i class="fa fa-chevron-left"></i> 多PC管理hexo博客
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/10/17/hexo-NEXT主题之博客优化/" rel="prev" title="hexo+NEXT主题之博客优化">
+                hexo+NEXT主题之博客优化 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/10/17/hexo-多说评论自定义CSS效果/"
+     data-title="hexo+多说评论自定义CSS效果"
+     data-content=""
+     data-url="http://guowenqi.github.io/2016/10/17/hexo-多说评论自定义CSS效果/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/10/17/hexo-多说评论自定义CSS效果/"
+           data-title="hexo+多说评论自定义CSS效果" data-url="http://guowenqi.github.io/2016/10/17/hexo-多说评论自定义CSS效果/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.png"
+               alt="郭文奇" />
+          <p class="site-author-name" itemprop="name">郭文奇</p>
+          <p class="site-description motion-element" itemprop="description">There are many ways to success！</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/guowenqi" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://t.qq.com/guowenqi6631" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-tencent-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/guo-wen-qi-97" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-graduation-cap"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://blog.csdn.net/u010233882" target="_blank" title="CSDN">
+                  
+                    <i class="fa fa-fw fa-bank"></i>
+                  
+                  CSDN
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://coding.net/u/guowenqi" target="_blank" title="Coding">
+                  
+                    <i class="fa fa-fw fa-github-alt"></i>
+                  
+                  Coding
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://vinnyxiong.cn/" title="熊远文" target="_blank">熊远文</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.joryhe.com/" title="JORY'S BLOG" target="_blank">JORY'S BLOG</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.yanglonglong.com/" title="ziv小站" target="_blank">ziv小站</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#效果一："><span class="nav-number">1.</span> <span class="nav-text">效果一：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#效果二："><span class="nav-number">2.</span> <span class="nav-text">效果二：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#效果三："><span class="nav-number">3.</span> <span class="nav-text">效果三：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#效果四："><span class="nav-number">4.</span> <span class="nav-text">效果四：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#效果五："><span class="nav-number">5.</span> <span class="nav-text">效果五：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#效果六："><span class="nav-number">6.</span> <span class="nav-text">效果六：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#效果七："><span class="nav-number">7.</span> <span class="nav-text">效果七：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#效果八："><span class="nav-number">8.</span> <span class="nav-text">效果八：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#效果九："><span class="nav-number">9.</span> <span class="nav-text">效果九：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#我的CSS"><span class="nav-number">10.</span> <span class="nav-text">我的CSS</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">郭文奇
+  
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span><a href="/sitemap.xml">Google网站地图</a></span>
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span><a href="/baidusitemap.xml">百度网站地图</a></span>
+  
+  </span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;本站总点击 <span id="busuanzi_value_site_pv"></span> 次
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;您是第 <span id="busuanzi_value_site_uv"></span> 位访客
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"guowenqi"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("vJCFtOMSW5fw5pSU3nshi839-gzGzoHsz", "rEPH694BG19GCBxSjBM4NVa2");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+</body>
+</html>
